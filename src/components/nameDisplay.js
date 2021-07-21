@@ -1,9 +1,9 @@
 import { useContext } from "react"
 import { NameContext } from "../contexts/nameContext"
 
-export default function NameDisplay(props){
+export default function NameDisplay({greeting}){
     const [name] = useContext(NameContext)
     return (
-        <h1>Your name: {name}</h1>
+        <h1>{greeting} {name}</h1>
     )
 }
