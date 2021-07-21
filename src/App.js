@@ -1,10 +1,12 @@
-import Name from './views/nameView'
+import { Name } from './views/nameView'
 import NameContextProvider from './contexts'
 
 function App() {
   return (
     <div>
-      <Name greeting={"Hello"}/>
+      <NameContextProvider>
+        <Name greeting={"Hello"}/>
+      </NameContextProvider>
     </div>
   );
 }
