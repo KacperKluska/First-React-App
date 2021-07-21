@@ -1,5 +1,5 @@
-import { Name } from './views/nameView'
-import NameContextProvider from './contexts'
+import Name from './views/nameView'
+import { NameContextProvider } from './contexts/nameContext'
 
 function App() {
   return (
